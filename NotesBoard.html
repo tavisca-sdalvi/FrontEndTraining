@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Idea board</title>
+    <link href="./NotesBoard.css" rel="stylesheet" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="./NotesBoard.js"></script>
+</head>
+
+<body>
+    <div class="mainboard">
+        <h2 class="title" id="mainBoardTitle">Swapnil Dalvi</h2>
+        <div class="boardContainer">
+            <div class="section oneThird" id="section1">
+                <div class="sectionTitleArea">
+                    <h4 class="setionTitle">Section 1</h4>
+                    <button class="addStickyButton fas fa-plus-circle" title="Add Sticky" id="section1Btn" onClick="addSticky(event)"></button>
+                </div>
+                <div class="stickyContainer">
+                </div>
+                <div class="addNewSticky hidden">
+                    <textarea class="stickyText" cols="30" maxlength="140" rows="4" onblur="hideTextArea(event)"></textarea>
+                </div>
+            </div>
+            <div class="section oneThird" id="section2">
+                <div class="sectionTitleArea">
+                    <h4 class="setionTitle">Section 2</h4>
+                    <button class="addStickyButton fas fa-plus-circle" title="Add Sticky" id="section2Btn" onClick="addSticky(event)"></button>
+                </div>
+                <div class="stickyContainer">
+                </div>
+                <div class="addNewSticky hidden">
+                    <textarea class="stickyText" cols="30" maxlength="140" rows="4" onblur="hideTextArea(event)"></textarea>
+                </div>
+            </div>
+            <div class="section oneThird" id="section3">
+                <div class="sectionTitleArea">
+                    <h4 class="setionTitle">Section 3</h4>
+                    <button class="addStickyButton fas fa-plus-circle" title="Add Sticky" id="section3Btn" onClick="addSticky(event)"></button>
+                </div>
+                <div class="stickyContainer">
+                </div>
+                <div class="addNewSticky hidden">
+                    <textarea class="stickyText" cols="30" maxlength="140" rows="4" onblur="hideTextArea(event)"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui-dialog ui-widget ui-widget-content ui-corner-all hidden" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-largeStickyDialog">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all">
+            <span class="ui-dialog-title" id="ui-dialog-title-largeStickyDialog">&nbsp;</span>
+            <a href="#" class="ui-dialog-titlebar-close ui-corner-all stickyClose fas fa-times" role="button" onClick="closeStickyWidget(event)"></a>
+        </div>
+        <div id="largeStickyDialog" class="ui-dialog-content ui-widget-content" scrolltop="0" scrollleft="0" style="width: auto; min-height: 0px; height: 209.8px;">
+            <div class="stickyLarge">
+                <div class="stickyTextContainer">
+                    <label for="stickyText">
+                        <span class="fas fa-pencil-alt"></span>
+                    </label>
+                    <textarea class="stickyText formElement" cols="35" id="stickyText" rows="4" title="click to edit" spellcheck="false" onblur="storeStickyContent(event)"></textarea>
+                    <span class="stickyUpdated">Updated</span>
+                </div>
+                <div class="stickyActions">
+                    <div class="stickyVote" onClick="handleVoteCount(event)">
+                        <a href="#" class="voteStickyButton fas fa-thumbs-up" role="button"></a>
+                        <span class="voteCountContainer">
+                            +
+                            <span class="count">0</span>
+                        </span>
+                        <span class="voteUpdated">Updated</span>
+                    </div>
+                    <a class="removeStickyButton fas fa-trash-alt" title="Delete sticky" onclick="handleStickyDelete(event)"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui-widget-overlay hidden"></div>
+</body>
+
+</html>

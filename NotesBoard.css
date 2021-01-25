@@ -1,0 +1,312 @@
+body {
+    background: #cccccc none repeat scroll 0 0;
+    font-family: 'Delius', 'Roboto', helvetica, cursive;
+}
+.ui-widget {
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+    width: 350px;
+}
+.title {
+    color: black;
+    text-align: center;
+    margin: 15px;
+}
+.mainboard {
+    background-color: white;
+    border: #696969 solid 10px;
+    -moz-box-shadow: 2px 3px 2px #888888;
+    -webkit-box-shadow: 2px 3px 2px #888888;
+    box-shadow: 2px 3px 2px #888888;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: auto;
+    width: 95%;
+    min-height: 643px;
+    text-align: center;
+    font-family: 'Delius', 'Roboto', helvetica, cursive;
+}
+h1, h2, h3, h4, .sectionTitle {
+    margin: 0.2em 0;
+    font-family: 'Handlee', 'Roboto', helvetica, cursive;
+    font-weight: bold;
+}
+.boardContainer{
+    padding:10px;
+    margin:10px;
+    overflow: auto;
+}
+.section {
+    float: left;
+    min-height: 200px;
+}
+.oneThird {
+    width: 33%;
+}
+
+.sectionTitleArea {
+    overflow: auto;
+    width: 100%;
+    padding: 0 0 0.5em 0;
+}
+
+.setionTitle {
+ display: inline;
+}
+
+.addStickyButton {
+    color: #83bc2d;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 1.2em;
+    padding: 5 5px;
+    background: none;
+}
+
+.stickyContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.addNewSticky {
+    display: block;
+    text-align: start;
+}
+
+.block{
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.sticky, .addNewSticky textarea  {
+    max-width: 15em;
+    word-wrap: break-word;
+    cursor: pointer;
+    width: 40%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    margin-top: 5px; 
+}
+.ui-widget-content {
+    word-wrap: break-word;
+    cursor: pointer;
+    width: 40%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    margin-top: 5px; 
+}
+
+.section1Sticky, #section1 textarea, .ui-widget-content {
+    background-color: #c3ee8f;
+    border: 1px solid #c3ee8f;
+}
+.section2Sticky, #section2 textarea {
+    background-color: #ffff88;
+    border: 1px solid #ffff88;
+}
+.section3Sticky, #section3 textarea {
+    background-color: #eed3ff;
+    border: 1px solid #eed3ff;
+}
+.addNewSticky textarea {
+    -moz-box-shadow: 5px 1px 3px #888888;
+    -webkit-box-shadow: 5px 1px 3px #888888;
+    box-shadow: 5px 1px 3px #888888;
+}
+
+.stickyBorder{
+    font-size: 0.75em;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.voteCount {
+    opacity: 0.5;
+    clear: both;
+    margin-top: 10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.ui-widget-content {
+    min-width: 10em;
+}
+.ui-corner-all {
+    border-radius: 6px;
+}
+.ui-dialog .ui-dialog-titlebar {
+    padding: .5em 1em .3em;
+    position: relative;
+}
+.ui-widget-header {
+    font-weight: bold;
+    display: block;
+}
+#largeStickyDialog {
+    font-size: 1em;
+    cursor: default;
+    font-family: 'Delius', 'Roboto', helvetica, cursive;
+    width: auto;
+}
+#largeStickyDialog .stickyTextContainer {
+    overflow: hidden;
+    padding-bottom: 15px;
+    position: relative;
+}
+#largeStickyDialog .stickyTextContainer label, #largeStickyDialog .stickyTextContainer textarea {
+    float: left;
+}
+#largeStickyDialog label {
+    cursor: pointer;
+}
+#largeStickyDialog .stickyTextContainer textarea{
+    width: 89%;
+    min-height: 130px;
+}
+#largeStickyDialog .formElement {
+    font-size: 16px;
+    padding: 5px;
+    font-family: 'Delius', 'Roboto', helvetica, cursive;
+    outline: none;
+    -moz-box-shadow: inset 0 1px 5px #777777;
+    -webkit-box-shadow: inset 0 1px 5px #777777;
+    box-shadow: inset 0 1px 5px #777777;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.ui-dialog .ui-dialog-content {
+    border: 0;
+    padding: .5em 1em;
+    background: none;
+    overflow: auto;
+    zoom: 1;
+}
+.stickyActions {
+    overflow: hidden;
+}
+.stickyActions .stickyVote {
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.ui-widget-content a {
+    color: #000;
+}
+.voteCountContainer, .voteStickyButton {
+    display: block;
+    float: left;
+}
+.voteCountContainer {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px 0 7px 5px;
+}
+#largeStickyDialog .voteUpdated {
+    top: 0;
+    left: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: .3em;
+    top: 50%;
+    width: 19px;
+    margin: -10px 0 0 0;
+    padding: 1px;
+    height: 18px;
+}
+.voteStickyButton {
+    font-size: 2.5em;
+    cursor: pointer;
+}
+.stickyActions .removeStickyButton {
+    font-size: 2.5em;
+    cursor: pointer;
+    float: right;
+    margin: 5px 0;
+}
+#largeStickyDialog textarea, #largeStickyDialog input {
+    background: transparent;
+    border: none;
+    overflow: auto;
+}
+span.fas.fa-pencil-alt {
+    text-indent: unset;
+    font-size: 19px;
+    padding: 3px;
+}
+.ui-dialog a.ui-dialog-titlebar-close.stickyClose {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px;
+    border: none;
+}
+.ui-widget-overlay {
+    background: #fff;
+    opacity: .80;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    height: 100%;
+    width: 100%;
+}
+.ui-widget {
+    position: absolute;
+    z-index: 1002;
+    outline: 0px;
+    height: auto;
+    width: 350px;
+    top: 250.5px;
+    left: 536.5px;
+}
+#largeStickyDialog .tagUpdated, #largeStickyDialog .stickyUpdated, #largeStickyDialog .voteUpdated {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: -100px;
+    width: 45px;
+    background: green;
+    border: 1px solid green;
+    border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-box-shadow: 0px -1px 5px #999999;
+    -webkit-box-shadow: 0px -1px 5px #999999;
+    box-shadow: 0px -1px 5px #999999;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    opacity: 0;
+    filter: alpha(opacity= -10);
+    padding: 1px 2px;
+    color: #EEE;
+    font-size: 0.8em;
+}
+
+#largeStickyDialog .tagUpdated.show, #largeStickyDialog .stickyUpdated.show, #largeStickyDialog .voteUpdated.show {
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    opacity: 1;
+    filter: alpha(opacity= 90);
+    right: 3px;
+}
